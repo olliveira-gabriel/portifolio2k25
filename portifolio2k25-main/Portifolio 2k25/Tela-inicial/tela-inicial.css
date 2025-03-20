@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --roxo-escuro: #191527;
+
+    --roxo-claro: #5F5BCD;
+
+    --roxo-50: #6E57E0;
+
+}
+
+.container-pricipal{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--roxo-escuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+.cabecalho {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    margin: 0%;
+    position: fixed; 
+    top: 0;     
+}
+nav {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 2%;
+    
+}
+.posicao-links{
+    width: 40%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+.txt-cabecalho{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    font-size: 18px;
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+.txt-cabecalho:hover {
+    color: var(--roxo-claro); 
+}
+
+.logo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: var(--roxo-claro); 
+}
+.primeira-sessao{
+    border: solid 1px #ffffff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 75vh;
+}
+.qse{
+    border: solid 3px #6E57E0;
+    width: 50%;
+    text-align: center;
+    height: 75vh;
+    
+}
+.carrosel{
+    border: solid 3px #ff0000;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+    
+}
+.img-carrosel{
+    height: 70vh;
+}
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffff;
+}
+p{
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffff;
+    font-size: 15px;
+}
