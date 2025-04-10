@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--roxo-escuro);
+
+}
+
+:root{
+    --roxo-escuro: #191527;
+    --roxo-claro: #5F5BCD;
+    --roxo-50: #6E57E0;
+}
+
+.container-pricipal{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+.cabecalho {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    margin: 0%;
+    position: fixed; 
+    top: 0;     
+    z-index: 1000;
+   
+}
+nav {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 2%;
+    
+}
+.posicao-links{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+.txt-cabecalho{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    font-size: 18px;
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+.txt-cabecalho:hover {
+    color: var(--roxo-claro); 
+}
+
+.logo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: var(--roxo-claro); 
+}
+.primeira-sessao{
+    /* border: solid 1px #ffffff; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 75vh;
+    padding: 5%;
+}
+.qse{
+    /* border: solid 3px #6E57E0; */
+    width: 50%;
+    text-align: center;
+    height: 75vh;
+    padding: 25px;
+}
+.carrosel-container {
+    position: relative;
+    width: 50%;
+    height: 75vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.carrosel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.img-carrosel {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.carrosel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.carrosel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--roxo-claro);
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+p{
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffff;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.btn-curriculo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 22px 32px;
+    background-color: var(--roxo-50);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 5%;
+}
+
+.btn-curriculo:hover {
+    background-color: var(--roxo-claro);
+}
+
+.btn-curriculo:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.segunda-sessao{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.btn-materias{
+  display: flex;
+  flex-direction: column;
+}
+.button{
+  font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 22px 32px;
+    background-color: var(--roxo-50);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 5%;
+}
+
+.button:hover {
+  background-color: var(--roxo-claro);
+}
+
+.button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
