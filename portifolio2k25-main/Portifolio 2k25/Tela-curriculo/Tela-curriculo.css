@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--roxo-escuro);
+
+}
+
+:root{
+    --roxo-escuro: #191527;
+    --roxo-claro: #5F5BCD;
+    --roxo-50: #6E57E0;
+}
+
+.container-pricipal{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+.cabecalho {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    margin: 0%;
+    position: fixed; 
+    top: 0;     
+    z-index: 1000;
+   
+}
+nav {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 2%;
+    
+}
+.posicao-links{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+.txt-cabecalho{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    font-size: 18px;
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+.txt-cabecalho:hover {
+    color: var(--roxo-claro); 
+}
+
+.logo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: var(--roxo-claro); 
+}
+
+.curriculo{
+    width: 25%;
+    margin-top: 10%;
+}
+.btn-curriculo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 22px 32px;
+    background-color: var(--roxo-50);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 5%;
+}
+.link{
+    text-decoration: none;
+    color: #ffff;
+    background-color: var(--roxo-50);
+}
+.rodape {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.links-rodape {
+    margin-top: 5%;
+}
+
+.links-rodape a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
