@@ -1,0 +1,93 @@
+body{
+    padding: 1%;
+}
+/*-=-=-=-=-=-=-=-=-=-= Header -=-=-=-=-=-=-=-=-=-= */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    border: 1px black solid;
+}
+
+.Logo h2{
+    display: flex;
+    font-size: 2.5rem;
+    margin-left: 40px;
+    border: 1px black solid;
+}
+
+.Topicos ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.7rem;
+    gap: 3rem;
+    margin-right: 40px;
+    border: 1px black solid;
+    list-style: none;
+
+}
+
+/* -------------Dropdown----------------- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.dropdown-content a:hover {
+    background-color: cyan;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* -------------Dropdown----------------- */
+
+/*-=-=-=-=-=-=-=-=-=-= Header -=-=-=-=-=-=-=-=-=-= */
+
+.Titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.Ativdade{
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 100vw;
+    border: black solid 1px;
+}
+
+.Descricao h1{
+    margin-left: 40%;
+}
+
+.MostrarAtividade img{
+width: 500px;
+height: 400px;
+margin-right: 100px;
+}
+
+.DescricaoHabilidades{
+
+    margin-left: 100px;
+    padding-right: 200px;
+}

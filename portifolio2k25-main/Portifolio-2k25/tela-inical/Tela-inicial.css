@@ -1,0 +1,144 @@
+body{
+    padding: 1%;
+    background-image: url(imagens/wallpaper.jpg);
+    background-size: cover; /* Cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-attachment: fixed; /* Fixa o fundo ao rolar (opcional) */
+    color: white;
+}
+
+/*-=-=-=-=-=-=-=-=-=-= Header -=-=-=-=-=-=-=-=-=-= */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(6, 205, 240, 0.445);
+    border-radius: 20px;
+    /* border: 1px black solid; */
+}
+
+.Logo h2{
+    display: flex;
+    font-size: 2.5rem;
+    margin-left: 40px;
+    /* border: 1px black solid; */
+}
+
+.Topicos ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.7rem;
+    gap: 3rem;
+    margin-right: 50px;
+    /* border: 1px black solid; */
+    list-style: none;
+}
+
+.Topicos a{
+    color: white;
+}
+
+/* -------------Dropdown----------------- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.dropdown-content a:hover {
+    background-color: cyan;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* -------------Dropdown----------------- */
+/*-=-=-=-=-=-=-=-=-=-= Header -=-=-=-=-=-=-=-=-=-= */
+
+.sobre-mim{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    padding: 2%;
+    border-radius: 4%;
+    background-color: rgba(2, 2, 2, 0.486);
+}
+
+.sobre-mim hr{
+
+    margin-left: 100px;
+    height: 2px;
+    width: 450px;
+    background-color: white;
+    border-radius: 800px;
+    border-style: none;
+}
+
+.Contatos{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.Contatos p{
+    margin-left: 15px;
+}
+
+.sobre-mim i{
+    font-size: 30px;
+    margin-left: 30%;
+    margin-top: 0px;
+}
+
+.Foto{
+    /* border-radius: 1%; */
+    margin-left: 30%;
+    width: 350px;
+    height: 500px;
+}
+
+
+.Biografia h1{
+    font-size: 60px;
+    margin-left: 35%;
+    /* border: 1px black solid; */
+}
+
+.Biografia p{
+    border: 1px black solid;
+    max-width: 60vw;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.Curriculo{
+    display: flex;
+    flex-direction: column;
+}
+
+.Curriculo img{
+    border: solid black 1px;
+    margin-left: 24%;
+    width: 525px;
+    height: 700px;
+}
