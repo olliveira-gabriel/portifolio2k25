@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
         clearInterval(intervalId);
     });
 
-    // Retomar auto-play quando o mouse sair do carrossel
     carroselContainer.addEventListener('mouseleave', () => {
         intervalId = setInterval(nextSlide, 3000);
     });
@@ -48,4 +47,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
  function curriculo(){
     window.location.href="../Tela-curriculo/Tela-curriculo.html"
+}
+
+function linguagem(){
+
+    window.location.href="../Tela-linguagens/Tela-linguagens.html"
+
+}
+
+function natureza(){
+    
+    window.location.href="../Tela-natureza/Tela-natureza.html"
+
+}
+
+function matematica(){
+    
+    window.location.href="../Tela-Matematica/Tela-matematica.html"
+
+}
+
+function humanas(){
+    window.location.href="../Tela-humanas/Tela-humanas.html"
+
+}
+
+function tecnico(){
+
+    window.location.href="../Tela-tecnico/Tela-tecnico.html"
+
+
 }
